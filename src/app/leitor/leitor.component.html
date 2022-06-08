@@ -1,0 +1,137 @@
+<br>
+
+           <p class="badge bg-primary text-center ">Adicionar Novos Leitores</p>
+
+
+<form (ngSubmit)="submit()" class="row g-3">
+    <div class="form-row">
+
+        <div class="col-md-1">
+            <label for="inputId" class="form-label">ID</label>
+            <input type="number" class="form-control" id="inputId" name="id" [(ngModel)]="model.id">
+        </div>
+    
+    <div class="row g-3">
+        <div class="form-group col-md-5">
+            <label for="inputNome">Nome:</label>
+            <input type="text" class="form-control" id="inputNome" name="Nome" [(ngModel)]="model.nome">
+        </div>
+
+        <div class="form-group col-md-2">
+            <label for="inputDocumento">Documento:</label>
+            <input type="text" class="form-control" id="inputDocumento" name="documento" [(ngModel)]="model.documento">
+        </div>
+
+        <div class="form-group col-md-2">
+            <label for="inputTelefone">Telefone:</label>
+            <input type="text" class="form-control" id="inputTelefone" name="telefone" [(ngModel)]="model.telefone">
+        </div>
+
+        <div class="form-group col-md-5">
+            <label for="inputemail">Email:</label>
+            <input type="text" class="form-control" id="inputemail" name="Email" [(ngModel)]="model.email">
+        </div>
+
+        <div class="col-md-2">
+            <label for="inputDataNascimento">Data Nascimento</label>
+            <input type="text" class="form-control" id="inputDocumento" name="dataNascimento"[(ngModel)]="model.dataNascimento">
+        </div>
+
+        
+    </div>
+
+    <div class="row g-3">
+        <div class="form-group col-md-4">
+            <label for="inputendereco">Logradouro:</label>
+            <input type="text" class="form-control" id="inputendereco" name="Logradouro" [(ngModel)]="model.endereco.logradouro">
+        </div>
+
+        <div class="form-group col-md-3">
+            <label for="inputbairro">Bairro:</label>
+            <input type="text" class="form-control" id="inputbairro" name="Bairro" [(ngModel)]="model.endereco.bairro">
+        </div>
+
+        <div class="form-group col-md-2">
+            <label for="inputcep">CEP:</label>
+            <input type="text" class="form-control" id="inputcep" name="Cep" [(ngModel)]="model.endereco.cep">
+        </div>
+    </div>
+
+    <div class="row g-3">
+
+        <div class="form-group col-md-3">
+            <label for="inputCidade">Cidade:</label>
+            <input type="text" class="form-control" id="inputCidade" name="Cidade" [(ngModel)]="model.endereco.cidade">
+        </div>
+
+        <div class="form-group col-md-2">
+            <label for="inputComplemento">Complemento:</label>
+            <input type="text" class="form-control" id="inputComplemento" name="complemento" [(ngModel)]="model.endereco.complemento">
+        </div>
+
+        <div class="form-group col-md-2">
+            <label for="inputnumero">Numero:</label>
+            <input type="text" class="form-control" id="inputnumero" name="Numero" [(ngModel)]="model.endereco.numero">
+        </div>
+
+        <div class="col-md-2">
+            <label for="inputUf">UF:</label>
+            <select class="form-select" id="inputUf" aria-label="Default select example" name="uf"
+                [(ngModel)]="model.endereco.uf">
+                <option value=""></option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+
+            
+
+            </div>
+
+           
+
+        </div>
+
+        <div class="col-md-2">
+            <label for="inputNum_Cadastro" class="form-label">Numero do Cadastro:</label>
+            <input type="text" class="form-control" id="inputNum_Cadastro" name="num_Cadastro" [(ngModel)]="model.num_Cadastro">
+        </div>
+
+    </div>   
+
+    <br>
+
+    <div class="row g-3">
+        <div class="form-group col-md-1">
+            <button class="btn btn-dark" (click)="voltarParalista()">Voltar</button>
+        </div>
+
+        <div class="form-group col-md-1">
+            <button type="submit" class="btn btn-dark">Save</button>
+        </div>
+    </div>
+
+</form>
